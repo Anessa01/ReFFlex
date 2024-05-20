@@ -86,7 +86,7 @@ for key in datasets:
             m = dataset.data.edge_index.shape[1]
             dataset.data.edge_type = torch.tensor(np.zeros(m, dtype=np.int64))
     elif args.rewiring == 'ReFFlex':
-        edge_index, edge_type, _ = ReFFlex.rewiring_v3(dataset.data.edge_index.numpy(), beta=1, kappa=args.kappa)
+        edge_index, edge_type, _ = ReFFlex.rewiring_v3(dataset.data.edge_index.numpy(), beta=40, kappa=args.kappa)
         dataset.data.edge_index = torch.tensor(edge_index)
         dataset.data.edge_type = torch.tensor(edge_type)
     elif args.rewiring == "borf":

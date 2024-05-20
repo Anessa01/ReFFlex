@@ -64,7 +64,7 @@ default_args = AttrDict({
     "eps": 0.001,
     "dataset": None,
     "last_layer_fa": False,
-    "kappa": 1.0,
+    "kappa": 0.15,
     "borf_batch_add" : 4,
     "borf_batch_remove" : 2
     })
