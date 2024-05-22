@@ -1,3 +1,6 @@
+"""
+Test rewired GNN performance on node classifiation benchmarks.
+"""
 from attrdict import AttrDict
 from torch_geometric.datasets import WebKB, WikipediaNetwork, Actor, Planetoid
 from torch_geometric.utils import to_networkx, from_networkx, to_undirected
