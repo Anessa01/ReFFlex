@@ -1,3 +1,7 @@
+## ReFFlex-GCN
+
+The implementation of *Tackling Over-squashing in GNNs via Probabilistic Curvature Measurement on Random Walks*
+
 ## Evaluation
 
 To train and evaluate the model on node classification tasks, run:
